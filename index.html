@@ -7,10 +7,27 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <div class="upload-section">
+      <label for="bottom-image-upload">Upload Bottom Image:</label>
+      <input type="file" id="bottom-image-upload" accept="image/*" />
+      <label for="top-image-upload">Upload Top Image:</label>
+      <input type="file" id="top-image-upload" accept="image/*" />
+    </div>
+
     <div class="image-comparison-container">
-      <img src="lillies.jpeg" alt="Bottom Image" class="bottom-image" />
+      <img
+        src="imgs/lillies-trippy.jpg"
+        alt="Bottom Image"
+        id="bottom-image"
+        class="bottom-image"
+      />
       <div class="top-image-wrapper">
-        <img src="lillies-trippy.jpg" alt="Top Image" class="top-image" />
+        <img
+          src="imgs/lillies.jpeg"
+          alt="Top Image"
+          id="top-image"
+          class="top-image"
+        />
       </div>
       <div class="slider" id="slider"></div>
     </div>
